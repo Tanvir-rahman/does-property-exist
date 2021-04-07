@@ -10,8 +10,8 @@ npm install is-property-exist --save
 
 **Params:**
 
-* every - checks whether every property exist or not. [Default]
-* some - checks if at least one property exist or not.
+* every [true / false] - checks whether every property exist or not. [Default true]
+* checkFalsy [true / false] - check falsy value. [Default false]
 
 ## Usage
 
@@ -24,7 +24,20 @@ isPropertyExist(obj, ["a"]) // 'true'
 isPropertyExist(obj, ["a", "b"]) // 'true'
 isPropertyExist(obj, ["a", "c"]) // 'false'
 
-isPropertyExist(obj, ["a", "c"], {type: "some"}) // 'true'
+isPropertyExist(obj, ["a", "c"], {every: false}) // 'true'
+
+isPropertyExist(obj, ["a", "b"], {checkFalsy: true}) // 'true'
+
+isPropertyExist(obj, ["a", "c"], {
+  every: false,
+  checkFalsy: true, 
+}) // 'true'
+
+isPropertyExist(obj, ["a", "b"], {
+  every: false,
+  checkFalsy: true, 
+}) // 'true'
+
 ```
 
 ### Author

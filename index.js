@@ -7,10 +7,14 @@
 
 'use strict';
 
-module.exports = function (obj, arr, options = {type: "every"}) {
-	let type = options.type;
-	if (options.type == 'some') {
-  	type = "some";
-  }
-  return arr[type](p => obj.hasOwnProperty(p));
+module.exports = function (obj, arr, options = {}) {
+	let type = options.every == false ? 'some' : 'every';
+  let checkFalsy =  options.checkFalsy || false;
+  
+  return arr[type](
+    (p) => {
+     	const hasProperty = obj.hasOwnProperty(p);
+      return checkFalsy ? hasProperty && obj[p] : hasProperty;
+    }
+  );
 }
