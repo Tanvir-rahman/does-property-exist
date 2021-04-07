@@ -1,6 +1,6 @@
 {
   "name": "is-property-exist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "To check whether object owns properties or not (every / some)",
   "main": "index.js",
   "keywords": [
