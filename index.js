@@ -1,5 +1,5 @@
 /*!
- * is-property-exist <https://github.com/Tanvir-rahman/is-property-exist>
+ * does-property-exist <https://github.com/Tanvir-rahman/does-property-exist>
  *
  * Copyright (c) 2021, Tanvir Rahman.
  * Released under the MIT License.

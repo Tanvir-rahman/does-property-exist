@@ -1,11 +1,11 @@
-# is-property-exist
+# does-property-exist
 
 A [Node.js](https://nodejs.org/) module which tests whether an object have specific properties or not. It's like [`hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) but with additional config option 'every' or 'some'.
 
 ## Installation
 
 ```bash
-npm install is-property-exist --save
+npm install does-property-exist --save
 ```
 
 **Params:**
@@ -16,36 +16,29 @@ npm install is-property-exist --save
 ## Usage
 
 ```javascript
-const isPropertyExist = require('is-property-exist')
+const doesPropertyExist = require('does-property-exist')
 
 const obj = { "a": 1, "b": 2 };
 
-isPropertyExist(obj, ["a"]) // 'true'
-isPropertyExist(obj, ["a", "b"]) // 'true'
-isPropertyExist(obj, ["a", "c"]) // 'false'
+doesPropertyExist(obj, ["a"]) // 'true'
+doesPropertyExist(obj, ["a", "b"]) // 'true'
+doesPropertyExist(obj, ["a", "c"]) // 'false'
 
-isPropertyExist(obj, ["a", "c"], {every: false}) // 'true'
+doesPropertyExist(obj, ["a", "c"], {every: false}) // 'true'
 
-isPropertyExist(obj, ["a", "b"], {checkFalsy: true}) // 'true'
+doesPropertyExist(obj, ["a", "b"], {checkFalsy: true}) // 'true'
 
-isPropertyExist(obj, ["a", "c"], {
+doesPropertyExist(obj, ["a", "c"], {
   every: false,
   checkFalsy: true, 
 }) // 'true'
 
-isPropertyExist(obj, ["a", "b"], {
+doesPropertyExist(obj, ["a", "b"], {
   every: false,
-  checkFalsy: true, 
+  checkFalsy: true,
 }) // 'true'
 
 ```
-
-### Author
-
-**Tanvir Rahman**
-
-* [LinkedIn Profile](https://www.linkedin.com/in/tanvir-rahman/)
-* [GitHub Profile](https://github.com/Tanvir-rahman)
 
 ### License
 

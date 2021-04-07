@@ -1,12 +1,12 @@
 {
-  "name": "is-property-exist",
-  "version": "1.1.0",
+  "name": "does-property-exist",
+  "version": "1.1.1",
   "description": "To check whether object owns properties or not (every / some)",
   "main": "index.js",
   "keywords": [
     "property",
-    "is-property",
-    "is-property-exist",
+    "does-property",
+    "does-property-exist",
     "has-property",
     "object",
     "has-own-property",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tanvir-rahman/is-property-exist.git"
+    "url": "git+https://github.com/Tanvir-rahman/does-property-exist.git"
   },
   "bugs": {
-    "url": "https://github.com/Tanvir-rahman/is-property-exist/issues"
+    "url": "https://github.com/Tanvir-rahman/does-property-exist/issues"
   },
-  "homepage": "https://github.com/Tanvir-rahman/is-property-exist#readme"
+  "homepage": "https://github.com/Tanvir-rahman/does-property-exist#readme"
 }
