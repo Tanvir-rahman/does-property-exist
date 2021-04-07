@@ -25,6 +25,7 @@ isPropertyExist(obj, ["a", "b"]) // 'true'
 isPropertyExist(obj, ["a", "c"]) // 'false'
 
 isPropertyExist(obj, ["a", "c"], {type: "some"}) // 'true'
+```
 
 ### Author
 
