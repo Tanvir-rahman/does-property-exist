@@ -40,4 +40,3 @@ Copyright © 2021, [Tanvir Rahman](https://github.com/Tanvir-rahman).
 Released under the [MIT License](LICENSE).
 
 ***
-```
