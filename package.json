@@ -1,0 +1,16 @@
+{
+  "name": "has-property-exist",
+  "version": "1.0.0",
+  "description": "To check whether object owns properties or not (every / some)",
+  "main": "index.js",
+  "keywords": [
+    "property",
+    "has-property",
+    "object",
+    "has-own-property",
+    "npm",
+    "yarn"
+  ],
+  "author": "Tanvir Rahman",
+  "license": "MIT"
+}
